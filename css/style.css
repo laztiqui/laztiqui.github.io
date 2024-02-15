@@ -93,6 +93,81 @@ header .navbar ul li a{
 footer div{
     text-align: center;
 }
+
+
+
+/*styling for projects 1, 2, and 3*/
+
+
+.flex-container .project-title{
+    width:100%;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.flex-container .banner{
+    max-height: 350px;
+    margin-top:15px;
+}
+
+.flex-container .sketch{
+    max-width: 300px;
+    margin-top:auto;
+}
+
+.flex-container .proj-cont {
+    width:100%;
+    height: 100%;
+}
+
+figcaption{
+    text-align: center;
+    font-style: italic;
+}
+
+.ml-pic{
+    max-height: 200px;
+}
+
+iframe{
+    width:90%;
+    height: 400px;
+}
+
+.rev-pic{
+    max-height:500px;
+}
+
+.block-diagram{
+    width:100%;
+}
+
+.audio{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto;
+
+    grid-gap: 10px;
+    padding: 10px;  
+}
+
+.audio .control{
+    max-width:100%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:40px;
+    max-width: 60%;
+    margin:auto;
+    margin-top:100px;
+    background-color: white;
+    align-items:center;
+}
+
 @media only screen and (max-width: 780px) {
     header .navbar ul li a{
         display: none;
@@ -104,8 +179,6 @@ footer div{
         margin:1px;
         padding: 0px;
         font-size: 16px;
-
-
     }
 
     .flex-container {
@@ -139,7 +212,22 @@ footer div{
     .menu{
         display:flex;
     }
+    .flex-container .project-title{
+        margin-bottom: 60px;
+        text-align: center;
+    }
 
+    #concept2{
+        width: 250px;
+    }
 
+    .flex-container .sketch{
+        max-width: 300px;
+        margin-top:10px;
+    }
+
+    .block-diagram{
+        width: 200px;
+    }
 }
 
