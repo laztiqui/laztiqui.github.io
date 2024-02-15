@@ -5,6 +5,7 @@ body{
     box-sizing: border-box;
 }
 
+/*Styling for header*/
 header{
     position:fixed;
     background-color: #383838;
@@ -56,6 +57,7 @@ header .navbar ul li a{
     text-decoration: underline;
 }
 
+/*Styling for main body content */
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -98,7 +100,7 @@ footer div{
 
 /*styling for projects 1, 2, and 3*/
 
-
+/*Styling building off of home page*/
 .flex-container .project-title{
     width:100%;
     height: 50px;
@@ -120,6 +122,7 @@ footer div{
     height: 100%;
 }
 
+/*Image video and audio styling*/
 figcaption{
     text-align: center;
     font-style: italic;
@@ -155,6 +158,7 @@ iframe{
     max-width:100%;
 }
 
+/*Contact page styling*/
 .contact{
     display: flex;
     flex-direction: column;
@@ -168,6 +172,7 @@ iframe{
     align-items:center;
 }
 
+/*media query to handle the size change */
 @media only screen and (max-width: 780px) {
     header .navbar ul li a{
         display: none;
