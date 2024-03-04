@@ -1,145 +1,48 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkers</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lazaro Tiqui</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <header> 
-        <h1>Javascript Checkers</h1>
-    </header>
+	<!--Define the header element that holds the navbar-->
+	<header>
+		<div class="page-name">Lazaro Tiqui</div>
+		<a class="menu-btn">Menu</a>
+		<!--Interactive navbar-->
+		<nav class="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="project1.html">Project 1</a></li>
+				<li><a href="project2.html">Project 2</a></li>
+				<li><a href="project3.html">Project 3</a></li>
+				<li><a href="/checkers/checkers.html">Checkers</a></li>
+				<li><a href="contacts.html">Contact</a></li>
+			</ul>
+		</nav>
 
-    <div class="player"><p class="playerStyle">Player 1</p><p>Score: <span  id="maroonScore">0</span></p></div>
+	</header>
 
-    <div class="board" id="board">
+	<!-- Main Content of the page-->
+	<div class = "flex-container"> <!--flex container for dynamic content-->
+		<img src="images/profile_pic.jpg" alt="Picture of 
+		Lazaro">
+		<div>
+			<h1>Hello,</h1>
+			<p>
+				My name is Lazaro Tiqui. I am a senior at NMSU studying electrical engineering with a focus in communication systems and digital signal processing. I received the SMART scholarship in my freshman year, leading to two summer internships and a full time job after graduation at The Research and Analysis Center in White Sands Missile Range. I plan to gain experience and build up my resume over the next few years. 
+			</p>
+		</div>
+	</div>
 
-        <div class="white square"></div>
-        <div class="black square">
-            <p class="index">1</p>
-            <div class="piece maroon" id="1"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece maroon" id="2"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece maroon" id="3"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece maroon" id="4"></div>
-        </div>
-
-        <div class="black square">
-            <div class="piece maroon" id="5"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece maroon" id="6"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece maroon" id="7"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece maroon" id="8"></div>
-        </div>
-        <div class="white square"></div>
-
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece maroon" id="9"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece maroon" id="10"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece maroon" id="11"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece maroon" id="12"></div>
-        </div>
-
-        <div class="black square"></div>
-        <div class="white square"></div>
-        <div class="black square"></div>
-        <div class="white square"></div>
-        <div class="black square"></div>
-        <div class="white square"></div>
-        <div class="black square"></div>
-        <div class="white square"></div>
-
-        <div class="white square"></div>
-        <div class="black square"></div>
-        <div class="white square"></div>
-        <div class="black square"></div>
-        <div class="white square"></div>
-        <div class="black square"></div>
-        <div class="white square"></div>
-        <div class="black square"></div>
-
-        <div class="black square">
-            <div class="piece orange" id="13"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece orange" id="14"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece orange" id="15"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece orange" id="16"></div>
-        </div>
-        <div class="white square"></div>
-
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece orange" id="17"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece orange" id="18"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece orange" id="19"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece orange" id="20"></div>
-        </div>
-
-        <div class="black square">
-            <div class="piece orange" id="21"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece orange" id="22"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece orange" id="23"></div>
-        </div>
-        <div class="white square"></div>
-        <div class="black square">
-            <div class="piece orange" id="24"></div>
-        </div>
-        <div class="white square"></div>
-        
-    </div>
-
-    <div class="player"><p class="playerStyle">Player 2</p><p>Score: <span  id="orangeScore">0</span></p></div>
-
+	<!--Define footer element-->
+	<footer>
+		<div>
+			<p>&copy 2024 by Lazaro Tiqui</p>
+		</div>
+	</footer>
 </body>
 </html>

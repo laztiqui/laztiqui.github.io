@@ -1,0 +1,238 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:#aaaaaa;
+    box-sizing: border-box;
+}
+
+/*Styling for header*/
+header{
+    position:fixed;
+    background-color: #383838;
+    top:0px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .page-name{
+    font-size: 2rem;
+    color:white;
+    margin: 1rem;
+}
+
+header .navbar ul{
+    position:relative;
+    list-style: none;
+    margin:0;
+}
+
+header .navbar ul li{
+    float:left;
+    
+}
+
+header .navbar ul li a{
+    font-size: 1.25rem;
+    padding: 10px;
+    margin:0;
+    color:white;
+    display: block;
+    text-decoration: none;
+}
+
+.menu-btn{
+    position: absolute;
+    right:10px;
+    font-size: 1.25rem;
+    padding: 20px;
+    color:white;
+    display:none;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover{
+    text-decoration: underline;
+}
+
+/*Styling for main body content */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:40px;
+    max-width: 60%;
+    margin:auto;
+    margin-top:100px;
+    background-color: white;
+    align-items:center;
+}
+
+.flex-container img {
+    height: 300px;
+    margin:10px;
+}
+
+.flex-container div {
+    height: 250px;
+    width: 400px;
+    color:black;
+    margin:10px;
+}
+
+.flex-container div h1{
+    margin:0;
+    font-size: 40px;
+}
+
+.flex-container div p{
+    font-size: 20px;
+}
+
+footer div{
+    text-align: center;
+}
+
+
+
+/*styling for projects 1, 2, and 3*/
+
+/*Styling building off of home page*/
+.flex-container .project-title{
+    width:100%;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.flex-container .banner{
+    max-height: 350px;
+    margin-top:15px;
+}
+
+.flex-container .sketch{
+    max-width: 300px;
+    margin-top:auto;
+}
+
+.flex-container .proj-cont {
+    width:100%;
+    height: 100%;
+}
+
+/*Image video and audio styling*/
+figcaption{
+    text-align: center;
+    font-style: italic;
+}
+
+.ml-pic{
+    max-height: 200px;
+}
+
+iframe{
+    width:90%;
+    height: 400px;
+}
+
+.rev-pic{
+    max-height:500px;
+}
+
+.block-diagram{
+    width:100%;
+}
+
+.audio{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto;
+
+    grid-gap: 10px;
+    padding: 10px;  
+}
+
+.audio .control{
+    max-width:100%;
+}
+
+/*Contact page styling*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:40px;
+    max-width: 60%;
+    margin:auto;
+    margin-top:100px;
+    background-color: white;
+    align-items:center;
+}
+
+/*media query to handle the size change */
+@media only screen and (max-width: 780px) {
+    header .navbar ul li a{
+        display: none;
+    }
+
+    .flex-container div{
+        height: 70%;
+        width: 100%;
+        margin:1px;
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    .flex-container {
+        max-width: 65%;
+    }
+
+    .flex-container img{
+        height:250px;
+        margin-top: 1px;
+        padding: 0px;
+    }
+
+    .flex-container div h1{
+        font-size: 30px;
+    }
+
+    .menu-btn{
+        position: absolute;
+        right:10px;
+        font-size: 1.25rem;
+        padding: 20px;
+        color:white;
+        display:block;
+        text-decoration: none;
+    }
+
+    .menu-btn:hover{
+        text-decoration: underline;
+    }
+
+    .menu{
+        display:flex;
+    }
+    .flex-container .project-title{
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    #concept2{
+        width: 250px;
+    }
+
+    .flex-container .sketch{
+        max-width: 300px;
+        margin-top:10px;
+    }
+
+    .block-diagram{
+        width: 200px;
+    }
+}
+

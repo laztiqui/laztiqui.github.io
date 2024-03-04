@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Reverberator Project</title>
+</head>
+<body>
+	<header>
+
+		<div class="page-name">Lazaro Tiqui</div>
+		<a href="index.html" class="menu-btn">Menu</a>
+		<nav class="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="project1.html">Project 1</a></li>
+				<li><a href="project2.html">Project 2</a></li>
+				<li><a href="project3.html">Project 3</a></li>
+				<li><a href="contacts.html">Contact</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<div class="flex-container">
+		<div class="project-title">
+			<h1>Reverberator Project</h1>
+		</div>
+		<div class="proj-cont">
+			<p>
+				In EE 395 Introduction to Digital Signal Processing, one of the projects was to design what is called Schroeder's reverberator. This project built on previous assignments within the class. We used a filter function we defined in a previous class in order to obtain our reverberators. We had to find the filter coefficients, but I won't get into the math. Schroeder's reverberator is made up of 4 plain reverberators and 2 allpass reverberator. The plain reverberators simulate early reflections, while the allpass simulate the late reflections. The figures below show each of the reverberator's magnitude and impulse responses.
+			</p>
+			
+		</div>
+		
+		<figure>
+			<img class="rev-pic" src="images/reverb_mag.jpg" alt="Reverberator Magnitude Responses">
+			<figcaption>Figure 1: Reverberator Magnitude Responses</figcaption>
+		</figure>
+		<figure>
+			<img class="rev-pic" src="images/reverb_impulse.jpg" alt="Reverberator Impulse Responses">
+			<figcaption>Figure 2: Reverberator Impulse Responses</figcaption>
+		</figure>
+
+		<div class="proj-cont">
+			<p>
+				After we designed and tested all the filters, we could now put everything together to form Schroeder's reverberator. We used the block diagram we learned in class. To set up the reverberator, we put the four plain reverberators in parallel and sum the outputs. We then feed that output into the allpass reverberators one at a time. Finally, we put our reverberator to the test with a short audio signal. We tested two different iterations of the reverberator and you can listen to the results below. Also for a more detailed review, please see the pdf below.
+			</p>
+			
+		</div>
+
+		<figure>
+			<img class="block-diagram" src="images/rev_bd.jpg" alt="Schroeder's Block Diagram">
+			<figcaption>Figure 3: Schroeder's Reverberator Block Diagram</figcaption>
+		</figure>
+
+		<div class="proj-cont">
+			<p>
+				Finally, we put our reverberator to the test with a short audio signal. We put a common test audio through the reverberator. You can listen to how it changed the original sound. 
+			</p>
+			
+		</div>
+		<div class="audio">
+			<p class="text">Original:</p>
+			<audio controls class="control">
+				<source src="audio/happy_schroeder1.wav" type="audio/wav">
+				Your browser does not support the audio element.
+			</audio>
+		
+			<p class="text">Reverberator:</p>
+			<audio controls class="control">
+				<source src="audio/happy_schroeder2.wav" type="audio/wav">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+
+	</div>
+
+	<footer>
+		<div>
+			<p>&copy 2024 by Lazaro Tiqui</p>
+		</div>
+	</footer>
+
+</body>
+</html>
