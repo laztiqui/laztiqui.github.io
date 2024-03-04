@@ -1,0 +1,72 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:rgb(56, 46, 46);
+    box-sizing: border-box;
+}
+
+header{
+    background-color: maroon;
+    top:0px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+
+.player{
+    display: flex;
+    justify-content: space-evenly;
+    width:50%;
+    margin:auto;
+}
+
+.player p{
+    color:white;
+    font-size: 28px;
+}
+
+.board{
+    width:600px;
+    height: 600px;
+    background-color: gray;
+    margin:auto;
+    border: 2px black;
+}
+
+.square{
+    width:75px;
+    height: 75px;
+    float:left;
+    
+}
+
+.white{
+    background-color: white;
+}
+
+.piece{
+    width: 30px;
+	height: 30px;
+    padding: 10px;
+	border-radius: 50px;
+    margin:12.5px auto;
+    border: solid black 2px;
+}
+
+.maroon{
+    background-color: maroon;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.square .index{
+    display:none;
+}
+
+
+

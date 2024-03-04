@@ -1,0 +1,2 @@
+This is not a completely working checkers game, I still have a few things to implement.
+King Pieces, check for win function, more styling stuff. I struggled a lot writing the logic, so I took a lot of inspiration from https://levelup.gitconnected.com/creating-a-board-game-checkers-with-javascript-ecd562f985c2. I wrote every single line myself, taking ideas from this website, but changing it for my own needs. 
